@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Tallinna 21. Kool",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Raua 6",
+    "district": "Kesklinn",
+    "lat": 59.43672,
+    "lon": 24.76511
+  },
+  {
+    "id": 2,
+    "name": "Tallinna Inglise Kolledž",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Estonia pst 10",
+    "district": "Kesklinn",
+    "lat": 59.43399,
+    "lon": 24.75222
+  },
+  {
+    "id": 3,
+    "name": "Tallinna Reaalkool",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Estonia pst 6",
+    "district": "Kesklinn",
+    "lat": 59.43428,
+    "lon": 24.75022
+  },
+  {
+    "id": 4,
+    "name": "Tallinna Kesklinna Põhikool",
+    "type": "Põhikool",
+    "ownership": "Munitsipaalkool",
+    "address": "Pärnu mnt 11",
+    "district": "Kesklinn",
+    "lat": 59.43212,
+    "lon": 24.74708
+  },
+  {
+    "id": 5,
+    "name": "Jakob Westholmi Gümnaasium",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Kevade 8",
+    "district": "Kesklinn",
+    "lat": 59.43332,
+    "lon": 24.73222
+  },
+  {
+    "id": 6,
+    "name": "Tallinna Südalinna Kool",
+    "type": "Põhikool",
+    "ownership": "Munitsipaalkool",
+    "address": "Liivalaia 23",
+    "district": "Kesklinn",
+    "lat": 59.42821,
+    "lon": 24.75492
+  },
+  {
+    "id": 7,
+    "name": "Kadrioru Saksa Gümnaasium",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Gonsiori 38",
+    "district": "Kesklinn",
+    "lat": 59.43691,
+    "lon": 24.78557
+  },
+  {
+    "id": 8,
+    "name": "Tallinna Laagna Gümnaasium",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Vikerlase 16",
+    "district": "Lasnamäe",
+    "lat": 59.44012,
+    "lon": 24.88034
+  },
+  {
+    "id": 9,
+    "name": "Tallinna Pae Gümnaasium",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Pae 5",
+    "district": "Lasnamäe",
+    "lat": 59.42775,
+    "lon": 24.81168
+  },
+  {
+    "id": 10,
+    "name": "Lasnamäe Gümnaasium",
+    "type": "Gümnaasium",
+    "ownership": "Munitsipaalkool",
+    "address": "Pae 59",
+    "district": "Lasnamäe",
+    "lat": 59.43343,
+    "lon": 24.84269
+  },
+  {
+    "id": 11,
+    "name": "Tallinna Pelgulinna Riigigümnaasium",
+    "type": "Gümnaasium",
+    "ownership": "Riigikool",
+    "address": "Kolde pst 67a",
+    "district": "Põhja-Tallinn",
+    "lat": 59.44869,
+    "lon": 24.70421
+  }
+]
