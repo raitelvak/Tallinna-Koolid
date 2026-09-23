@@ -1,21 +1,16 @@
 {
-  "name": "tallinna-koolide-asukohad",
-  "private": true,
-  "version": "2.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
     "update:schools": "node scripts/scrape-all-schools.mjs"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "leaflet": "^1.9.4",
-    "undici": "^7.16.0",
-    "cheerio": "^1.1.2"
+    "react-leaflet": "^4.2.1",
+    "playwright": "^1.55.0"
   }
 }
