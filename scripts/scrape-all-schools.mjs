@@ -1,285 +1,155 @@
 import fs from "node:fs/promises";
-import { Agent, fetch, setGlobalDispatcher } from "undici";
+import path from "node:path";
 import * as cheerio from "cheerio";
 
-const BASE_URL = "https://teatmik.haridus.ee/koolid";
-const FIRST_ID = 1;
-const LAST_ID = 350;
-const OUTPUT_FILE = "src/data/schools.json";
-const FAILED_FILE = "src/data/failed-school-pages.json";
+const BASE_URL = "https://teatmik.haridus.ee";
+const LIST_URL = `${BASE_URL}/koolid/`;
+const OUTPUT_FILE = path.resolve("data/schools.json");
 
-setGlobalDispatcher(
-  new Agent({
-    connect: { timeout: 60_000 },
-    headersTimeout: 90_000,
-    bodyTimeout: 90_000,
-  })
-);
+const MUNICIPAL_TERMS = [
+  "munitsipaalomand",
+  "munitsipaalkool",
+  "tallinna linn",
+];
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function fetchWithRetry(url, attempts = 4) {
-  let lastError;
+function normalizeText(value = "") {
+  return value.replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+}
 
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try {
-      console.log(`Päring ${attempt}/${attempts}: ${url}`);
+function absoluteUrl(url) {
+  return new URL(url, BASE_URL).href;
+}
 
-      const response = await fetch(url, {
-        headers: {
-          "User-Agent": "Tallinna-koolide-kaart/3.0 (school directory updater)",
-          "Accept-Language": "et-EE,et;q=0.9,en;q=0.5",
-          Accept: "text/html,application/xhtml+xml",
-        },
-        signal: AbortSignal.timeout(90_000),
-        redirect: "follow",
-      });
+async function fetchHtml(url, attempt = 1) {
+  const response = await fetch(url, {
+    headers: {
+      "User-Agent":
+        "Tallinna-Koolid/1.0 school-data-updater contact: GitHub raitelvak/Tallinna-Koolid",
+      Accept: "text/html,application/xhtml+xml",
+      "Accept-Language": "et-EE,et;q=0.9,en;q=0.7",
+    },
+    redirect: "follow",
+  });
 
-      if (response.status === 404) return response;
-      if (response.status === 429 || response.status >= 500) {
-        throw new Error(`Ajutine HTTP viga ${response.status}`);
-      }
+  const html = await response.text();
 
-      return response;
-    } catch (error) {
-      lastError = error;
-      console.warn(`Katse ${attempt}/${attempts} ebaõnnestus: ${error.message}`);
+  console.log(
+    `HTTP ${response.status}, ${html.length} märki, URL: ${response.url}`
+  );
 
-      if (attempt < attempts) {
-        await sleep(attempt * 5000);
-      }
+  if (!response.ok) {
+    if (attempt < 4) {
+      await sleep(attempt * 1500);
+      return fetchHtml(url, attempt + 1);
     }
+
+    throw new Error(`HTTP ${response.status}: ${url}`);
   }
 
-  throw lastError;
+  return {
+    html,
+    finalUrl: response.url,
+    status: response.status,
+  };
 }
 
-function normalizeSpace(value) {
-  return String(value || "")
-    .replace(/\u00a0/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+function findValueByLabel($, labels) {
+  const wanted = labels.map((label) => label.toLowerCase());
+
+  let result = "";
+
+  $("dt, th, strong, b, .label, .field-label").each((_, element) => {
+    if (result) return;
+
+    const label = normalizeText($(element).text()).toLowerCase();
+
+    if (!wanted.some((wantedLabel) => label.includes(wantedLabel))) {
+      return;
+    }
+
+    const candidate =
+      $(element).next("dd, td, .value, .field-value").first().text() ||
+      $(element).parent().find("dd, td, .value, .field-value").first().text();
+
+    result = normalizeText(candidate);
+  });
+
+  return result;
 }
 
-function decodeHtmlText(html) {
+function parseSchoolPage(html, sourceUrl) {
   const $ = cheerio.load(html);
-  $("script, style, noscript, svg").remove();
-  return normalizeSpace($("body").text());
-}
 
-function readBetween(text, label, nextLabels) {
-  const start = text.indexOf(label);
-  if (start < 0) return null;
+  const title = normalizeText(
+    $("h1").first().text() ||
+      $("main h2").first().text() ||
+      $("title").first().text()
+  );
 
-  const tail = text.slice(start + label.length).trim();
-  let end = tail.length;
+  const bodyText = normalizeText($("body").text());
 
-  for (const nextLabel of nextLabels) {
-    const position = tail.indexOf(nextLabel);
-    if (position >= 0 && position < end) end = position;
-  }
-
-  return normalizeSpace(tail.slice(0, end)) || null;
-}
-
-const FIELD_LABELS = [
-  "Registrikood",
-  "Tüüp",
-  "Omandivorm",
-  "Aadress (id)",
-  "Aadress",
-  "Linnaosa",
-  "Õppekeel",
-  "Õpilaste arv",
-  "Poisid",
-  "Tüdrukud",
-  "Email",
-  "Koduleht",
-  "Vabu kohti",
-  "Endised nimed",
-  "Kontaktandmed",
-];
-
-function field(text, label) {
-  return readBetween(text, label, FIELD_LABELS.filter((item) => item !== label));
-}
-
-function extractTitle(html) {
-  const $ = cheerio.load(html);
-  return normalizeSpace($("h1").first().text()) || null;
-}
-
-function normalizeOwnership(value) {
-  const text = normalizeSpace(value).toLowerCase();
-  if (text.includes("munitsipaal")) return "Munitsipaalkool";
-  if (text.includes("riigi")) return "Riigikool";
-  if (text.includes("era")) return "Erakool";
-  return "Muu";
-}
-
-function normalizeDistrict(value) {
-  return normalizeSpace(value)
-    .replace(/ linnaosa$/i, "")
-    .replace(/^Põhja-Tallinna$/i, "Põhja-Tallinn") || null;
-}
-
-function extractGoogleCoordinates(html) {
-  const patterns = [
-    /google\.com\/maps[^"'<>\s]*?@(-?\d+\.\d+),(-?\d+\.\d+)/i,
-    /maps\/place\/[^"'<>\s]*?\/\@(-?\d+\.\d+),(-?\d+\.\d+)/i,
-    /[?&]query=(-?\d+\.\d+)%2C(-?\d+\.\d+)/i,
-    /[?&]query=(-?\d+\.\d+),(-?\d+\.\d+)/i,
-  ];
-
-  for (const pattern of patterns) {
-    const match = html.match(pattern);
-    if (match) return { lat: Number(match[1]), lon: Number(match[2]) };
-  }
-
-  return null;
-}
-
-function isInTallinn(lat, lon) {
-  return lat >= 59.30 && lat <= 59.58 && lon >= 24.47 && lon <= 24.97;
-}
-
-async function geocode(name, address) {
-  const queries = [
-    address ? `${address}, Tallinn, Eesti` : null,
-    name ? `${name}, Tallinn, Eesti` : null,
-  ].filter(Boolean);
-
-  for (const query of queries) {
-    const url =
-      "https://nominatim.openstreetmap.org/search" +
-      "?format=jsonv2&addressdetails=1&limit=5&countrycodes=ee" +
-      "&viewbox=24.47,59.58,24.97,59.30&bounded=1" +
-      `&q=${encodeURIComponent(query)}`;
-
-    try {
-      const response = await fetchWithRetry(url, 3);
-      if (!response.ok) continue;
-
-      const results = await response.json();
-      const hit = results.find((item) =>
-        isInTallinn(Number(item.lat), Number(item.lon))
-      );
-
-      if (hit) {
-        return { lat: Number(hit.lat), lon: Number(hit.lon) };
-      }
-    } catch (error) {
-      console.warn(`Geokodeerimine ebaõnnestus: ${query}: ${error.message}`);
-    }
-
-    await sleep(1200);
-  }
-
-  return { lat: null, lon: null };
-}
-
-const schools = [];
-const failedPages = [];
-
-for (let id = FIRST_ID; id <= LAST_ID; id += 1) {
-  const url = `${BASE_URL}/${id}/`;
-
-  try {
-    const response = await fetchWithRetry(url, 4);
-    if (response.status === 404 || !response.ok) continue;
-
-    const html = await response.text();
-    const text = decodeHtmlText(html);
-    const name = extractTitle(html);
-
-    const registrationCode = field(text, "Registrikood");
-    const type = field(text, "Tüüp");
-    const ownershipRaw = field(text, "Omandivorm");
-    const address = field(text, "Aadress (id)") || field(text, "Aadress");
-    const districtRaw = field(text, "Linnaosa");
-
-    // Detaillehe tunnused. Mitte-koolide, tühjade ja ümbersuunatud lehtede vahelejätmine.
-    if (!name || !type || !ownershipRaw || !address || !districtRaw) continue;
-    if (!districtRaw.toLowerCase().includes("linnaosa")) continue;
-    if (!text.includes("Registrikood") || !text.includes("Omandivorm")) continue;
-
-    let coordinates = extractGoogleCoordinates(html);
-    if (!coordinates || !isInTallinn(coordinates.lat, coordinates.lon)) {
-      coordinates = await geocode(name, address);
-    }
-
-    const school = {
-      id,
-      registrationCode,
-      name,
-      type,
-      ownership: normalizeOwnership(ownershipRaw),
-      ownershipRaw,
-      address,
-      district: normalizeDistrict(districtRaw),
-      lat: coordinates.lat,
-      lon: coordinates.lon,
-      source: url,
-    };
-
-    schools.push(school);
-    console.log(
-      `LEITUD ${schools.length}: ${school.name} | ${school.ownership} | ${school.address}`
+  const address =
+    findValueByLabel($, ["aadress", "asukoht"]) ||
+    normalizeText(
+      $('[itemprop="streetAddress"]').first().text() ||
+        $("address").first().text()
     );
 
-    await sleep(250);
-  } catch (error) {
-    failedPages.push({ id, url, error: error.message });
-    console.warn(`Leht ${id} jäeti vahele: ${error.message}`);
-    await sleep(1500);
+  const ownership = findValueByLabel($, [
+    "omandivorm",
+    "omand",
+    "pidaja",
+  ]);
+
+  const website =
+    $('a[href^="http"]')
+      .filter((_, element) => {
+        const href = $(element).attr("href") || "";
+        return (
+          !href.includes("teatmik.haridus.ee") &&
+          !href.includes("google.com/maps")
+        );
+      })
+      .first()
+      .attr("href") || "";
+
+  const municipal =
+    MUNICIPAL_TERMS.some((term) =>
+      `${ownership} ${bodyText}`.toLowerCase().includes(term)
+    ) ||
+    bodyText.toLowerCase().includes("tallinna haridusamet");
+
+  if (!title) {
+    return {
+      school: null,
+      reason: "Kooli nime ei leitud",
+    };
   }
-}
 
-const uniqueSchools = [
-  ...new Map(
-    schools.map((school) => [
-      school.registrationCode || `${school.name}|${school.address}`,
-      school,
-    ])
-  ).values(),
-].sort((a, b) => a.name.localeCompare(b.name, "et"));
+  if (!address) {
+    return {
+      school: null,
+      reason: `Aadressi ei leitud: ${title}`,
+    };
+  }
 
-await fs.mkdir("src/data", { recursive: true });
+  if (!municipal) {
+    return {
+      school: null,
+      reason: `Ei tuvastatud munitsipaalkoolina: ${title}`,
+    };
+  }
 
-if (uniqueSchools.length === 0) {
-  throw new Error(
-    "Ühtegi kooli ei parsitud. Haridusameti lehestruktuur võis muutuda. Olemasolevat schools.json faili ei kirjutatud üle."
-  );
-}
-
-await fs.writeFile(
-  OUTPUT_FILE,
-  JSON.stringify(uniqueSchools, null, 2) + "\n",
-  "utf8"
-);
-
-await fs.writeFile(
-  FAILED_FILE,
-  JSON.stringify(failedPages, null, 2) + "\n",
-  "utf8"
-);
-
-const ownershipCounts = uniqueSchools.reduce((counts, school) => {
-  counts[school.ownership] = (counts[school.ownership] || 0) + 1;
-  return counts;
-}, {});
-
-const missingCoordinates = uniqueSchools.filter(
-  (school) => school.lat === null || school.lon === null
-);
-
-console.log("\n=== KOKKUVÕTE ===");
-console.log(`Kokku koole: ${uniqueSchools.length}`);
-console.log("Omandivormid:", ownershipCounts);
-console.log(`Koordinaatideta: ${missingCoordinates.length}`);
-console.log(`Võrgutõrke tõttu vahele jäetud lehti: ${failedPages.length}`);
-
-if (missingCoordinates.length > 0) {
-  console.log("Koordinaatideta koolid:");
-  for (const school of missingCoordinates) console.log(`- ${school.name}: ${school.address}`);
+  return {
+    school: {
+      name: title,
+      address,
+      ownership: ownership || "Munitsipaalomand",
+      website,
+      sourceUrl,
+    },
+    reason: null,
+  };
 }
