@@ -16,7 +16,15 @@ function SchoolMap({origin,items,selected,onSelect}){
 
 export default function App(){
  const[address,setAddress]=useState(''),[suggestions,setSuggestions]=useState([]),[chosen,setChosen]=useState(null),[origin,setOrigin]=useState(null),[nearest,setNearest]=useState([]),[loading,setLoading]=useState(false),[error,setError]=useState(''),[mode,setMode]=useState('all'),[ownership,setOwnership]=useState('Kõik omandivormid'),[district,setDistrict]=useState('Kõik linnaosad'),[level,setLevel]=useState('Kõik kooliastmed'),[query,setQuery]=useState(''),[selected,setSelected]=useState(null);const timer=useRef();
- const valid=useMemo(()=>schools,[]);
+const valid = useMemo(
+() =>
+schools.filter(
+school =>
+Number.isFinite(school.lat) &&
+Number.isFinite(school.lon)
+),
+[]
+);
  const districts=useMemo(()=>['Kõik linnaosad',...new Set(schools.map(s=>s.district).filter(Boolean))],[]);
  const levels=useMemo(()=>['Kõik kooliastmed',...new Set(schools.map(s=>s.type).filter(Boolean))],[]);
  const filtered=useMemo(()=>{const base=mode==='nearest'&&nearest.length?nearest:valid;return base.filter(s=>(ownership==='Kõik omandivormid'||s.ownership===ownership)&&(district==='Kõik linnaosad'||s.district===district)&&(level==='Kõik kooliastmed'||s.type===level)&&`${s.name} ${s.address}`.toLowerCase().includes(query.toLowerCase()))},[mode,nearest,valid,ownership,district,level,query]);
