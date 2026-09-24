@@ -9,9 +9,13 @@
     "address": "Ehte tn 9, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Ehte tn 9, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4414654,
+    "lon": 24.6989008,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Ehte Humanitaargümnaasium, Kolde pst, Pelgulinn, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10321, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 453670850
   },
   {
     "id": 2,
@@ -23,9 +27,13 @@
     "address": "Suur-Kloostri tn 16, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Suur-Kloostri tn 16, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4392935,
+    "lon": 24.7413408,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Suur-Kloostri, All-linn, Vanalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 15161, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 4579288
   },
   {
     "id": 3,
@@ -37,9 +45,13 @@
     "address": "Raudtee tn 55, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Raudtee tn 55, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3768169,
+    "lon": 24.6554956,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Raudtee, Kivimäe, Nõmme, Tallinn, Harju maakond, 10919, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 5058502
   },
   {
     "id": 4,
@@ -51,9 +63,13 @@
     "address": "Kevade tn 8, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Kevade tn 8, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4337831,
+    "lon": 24.7310569,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Jakob Westholmi Gümnaasium, 8, Kevade, Kassisaba, Kesklinna linnaosa, Tallinn, Harju maakond, 15098, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 807529110
   },
   {
     "id": 5,
@@ -65,9 +81,13 @@
     "address": "Gonsiori tn 38, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Gonsiori tn 38, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4344871,
+    "lon": 24.7664783,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Gonsiori, Torupilli, Kesklinna linnaosa, Tallinn, Harju maakond, 10124, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 49342448
   },
   {
     "id": 6,
@@ -79,9 +99,13 @@
     "address": "Vabriku tn 18, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Vabriku tn 18, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.443319,
+    "lon": 24.7291645,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Vabriku, Krulli kvartal, Kalamaja, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10411, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 8016861
   },
   {
     "id": 7,
@@ -93,9 +117,13 @@
     "address": "Karjamaa tn 1, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Karjamaa tn 1, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4522916,
+    "lon": 24.7076248,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Karjamaa Põhikool, 1, Karjamaa, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10416, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 453662022
   },
   {
     "id": 8,
@@ -107,9 +135,13 @@
     "address": "Pae tn 82, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Pae tn 82, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4336744,
+    "lon": 24.8185241,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Pae, Lasnamäe linnaosa, Tallinn, Harju maakond, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "relation",
+    "osmId": 11132309
   },
   {
     "id": 9,
@@ -121,9 +153,13 @@
     "address": "Ümera tn 46, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Ümera tn 46, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4439398,
+    "lon": 24.8869685,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Ümera, Seli, Lasnamäe linnaosa, Tallinn, Harju maakond, 13817, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 48125561
   },
   {
     "id": 10,
@@ -135,9 +171,13 @@
     "address": "Heki tee 16, Pirita linnaosa",
     "district": "Pirita",
     "mapQuery": "Heki tee 16, Pirita linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.492781,
+    "lon": 24.8465881,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "16, Heki tee, Merivälja, Pirita linnaosa, Tallinn, Harju maakond, 12112, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26861785
   },
   {
     "id": 11,
@@ -149,9 +189,13 @@
     "address": "Mulla tn 7, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Mulla tn 7, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4389444,
+    "lon": 24.7036154,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Pelgulinna Riigigümnaasium, 67a, Kolde pst, Pelgulinn, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10321, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 1206402408
   },
   {
     "id": 12,
@@ -163,9 +207,13 @@
     "address": "Metsavahi tee 19, Pirita linnaosa",
     "district": "Pirita",
     "mapQuery": "Metsavahi tee 19, Pirita linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4699512,
+    "lon": 24.8414265,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Pirita raamatukogu, 19, Metsavahi tee, Pirita, Pirita linnaosa, Tallinn, Harju maakond, 11913, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 7603479576
   },
   {
     "id": 13,
@@ -177,9 +225,13 @@
     "address": "Ristiku tn 69, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Ristiku tn 69, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4438888,
+    "lon": 24.7119602,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Ristiku, Pelgulinn, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10317, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 156068675
   },
   {
     "id": 14,
@@ -191,9 +243,13 @@
     "address": "J. Koorti tn 23, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "J. Koorti tn 23, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4425417,
+    "lon": 24.8354062,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tähesaju Gümnaasium, 23, Jaan Koorti, Laagna, Lasnamäe linnaosa, Tallinn, Harju maakond, 13612, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 724542970
   },
   {
     "id": 15,
@@ -205,9 +261,13 @@
     "address": "Raua tn 6, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Raua tn 6, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4351917,
+    "lon": 24.7664539,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna 21. Kool, 6, Raua, Kesklinna linnaosa, Tallinn, Harju maakond, 10124, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 244524995
   },
   {
     "id": 16,
@@ -219,9 +279,13 @@
     "address": "Kiili tn 10, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "Kiili tn 10, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4095216,
+    "lon": 24.6971964,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Kiili, Sääse, Mustamäe linnaosa, Tallinn, Harju maakond, 13423, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 700233635
   },
   {
     "id": 17,
@@ -233,9 +297,13 @@
     "address": "J. Sütiste tee 42, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "J. Sütiste tee 42, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3968077,
+    "lon": 24.68692,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna 53. keskkool, Juhan Sütiste tee, Mustamäe, Mustamäe linnaosa, Tallinn, Harju maakond, 13411, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 254113316
   },
   {
     "id": 18,
@@ -247,9 +315,13 @@
     "address": "E. Vilde tee 62, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "E. Vilde tee 62, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4038079,
+    "lon": 24.6911794,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Arte Gümnaasium, 62/1, Eduard Vilde tee, Mustamäe, Mustamäe linnaosa, Tallinn, Harju maakond, 13421, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 12411457567
   },
   {
     "id": 19,
@@ -261,9 +333,13 @@
     "address": "Auna tn 6, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Auna tn 6, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4510389,
+    "lon": 24.7134407,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Avatud kool, 18, Karjamaa, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10416, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 1558172245
   },
   {
     "id": 20,
@@ -275,9 +351,13 @@
     "address": "Õismäe tee 132, Haabersti linnaosa",
     "district": "Haabersti",
     "mapQuery": "Õismäe tee 132, Haabersti linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4174185,
+    "lon": 24.6480038,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "132, Õismäe tee, Väike-Õismäe, Haabersti linnaosa, Tallinn, Harju maakond, 13511, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26866975
   },
   {
     "id": 21,
@@ -289,9 +369,13 @@
     "address": "Ehte tn 7, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Ehte tn 7, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.442333,
+    "lon": 24.6994756,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Heleni kool, 7, Ehte, Pelgulinn, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10311, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 775688796
   },
   {
     "id": 22,
@@ -303,9 +387,13 @@
     "address": "Koidu tn 97, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Koidu tn 97, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4223664,
+    "lon": 24.7367562,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Koidu, Uus Maailm, Kesklinna linnaosa, Tallinn, Harju maakond, 10139, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 982036739
   },
   {
     "id": 23,
@@ -317,9 +405,13 @@
     "address": "Estonia pst 10, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Estonia pst 10, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4334568,
+    "lon": 24.7464863,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "10, Estonia pst, Südalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 10148, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 112297111
   },
   {
     "id": 24,
@@ -331,9 +423,13 @@
     "address": "Järveotsa tee 31, Haabersti linnaosa",
     "district": "Haabersti",
     "mapQuery": "Järveotsa tee 31, Haabersti linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4096762,
+    "lon": 24.640492,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Järveotsa Gümnaasium, 31, Järveotsa tee, Väike-Õismäe, Haabersti linnaosa, Tallinn, Harju maakond, 13520, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26850554
   },
   {
     "id": 25,
@@ -345,9 +441,13 @@
     "address": "Karu tn 16, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Karu tn 16, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4390458,
+    "lon": 24.7657347,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Karu, Sadama, Kesklinna linnaosa, Tallinn, Harju maakond, 10154, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 731776059
   },
   {
     "id": 26,
@@ -359,9 +459,13 @@
     "address": "E. Vilde tee 120, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "E. Vilde tee 120, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4032874,
+    "lon": 24.6699077,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "E. Vilde tee, Ehitajate tee, Mustamäe, Mustamäe linnaosa, Tallinn, Harju maakond, 12612, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 344388730
   },
   {
     "id": 27,
@@ -373,9 +477,13 @@
     "address": "F. R. Kreutzwaldi tn 25, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "F. R. Kreutzwaldi tn 25, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4384332,
+    "lon": 24.770398,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "F. R. Kreutzwaldi, Narva mnt, Raua, Kesklinna linnaosa, Tallinn, Harju maakond, 10120, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 1091322862
   },
   {
     "id": 28,
@@ -387,9 +495,13 @@
     "address": "Leegi tn 14, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Leegi tn 14, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3747066,
+    "lon": 24.6442512,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Leegi, Pääsküla, Nõmme, Tallinn, Harju maakond, 10914, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 4599190
   },
   {
     "id": 29,
@@ -401,9 +513,13 @@
     "address": "Nõmme tee 32, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Nõmme tee 32, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.418513,
+    "lon": 24.7198503,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Kristiine Gümnaasium, 32, Nõmme tee, Lilleküla, Kristiine linnaosa, Tallinn, Harju maakond, 13426, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 255112145
   },
   {
     "id": 30,
@@ -415,9 +531,13 @@
     "address": "Kopli tn 102a/1, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Kopli tn 102a/1, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4571542,
+    "lon": 24.6810461,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Kunstigümnaasium, Turvise, Kopli, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 11711, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 297002899
   },
   {
     "id": 31,
@@ -429,9 +549,13 @@
     "address": "K. Kärberi tn 9, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "K. Kärberi tn 9, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4465321,
+    "lon": 24.8800139,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Kuristiku Gümnaasium, 9, Kristjan Kärberi, Mustakivi, Lasnamäe linnaosa, Tallinn, Harju maakond, 13918, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 734868205
   },
   {
     "id": 32,
@@ -443,9 +567,13 @@
     "address": "Vikerlase tn 16, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Vikerlase tn 16, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4381366,
+    "lon": 24.838846,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Vikerlase, Laagna, Lasnamäe linnaosa, Tallinn, Harju maakond, 13615, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 4871848
   },
   {
     "id": 33,
@@ -457,9 +585,13 @@
     "address": "P. Pinna tn 15, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "P. Pinna tn 15, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4355987,
+    "lon": 24.8366836,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "P. Pinna, Paul Pinna, Laagna, Lasnamäe linnaosa, Tallinn, Harju maakond, 13619, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 12542143932
   },
   {
     "id": 34,
@@ -471,9 +603,13 @@
     "address": "Vormsi tn 3, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Vormsi tn 3, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4540376,
+    "lon": 24.8670105,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Läänemere Gümnaasium, Narva mnt, Kuristiku, Lasnamäe linnaosa, Tallinn, Harju maakond, 12013, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 115736116
   },
   {
     "id": 35,
@@ -485,9 +621,13 @@
     "address": "Kuldnoka tn 24, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Kuldnoka tn 24, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4202829,
+    "lon": 24.7037377,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Kuldnoka, Lilleküla, Kristiine linnaosa, Tallinn, Harju maakond, 10620, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 681634608
   },
   {
     "id": 36,
@@ -499,9 +639,13 @@
     "address": "Linnamäe tee 10, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Linnamäe tee 10, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4492303,
+    "lon": 24.8746011,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "10, Linnamäe tee, Kuristiku, Lasnamäe linnaosa, Tallinn, Harju maakond, 13911, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26872014
   },
   {
     "id": 37,
@@ -513,9 +657,13 @@
     "address": "Mahtra tn 60, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Mahtra tn 60, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4395024,
+    "lon": 24.8761975,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Mahtra, Mustakivi, Lasnamäe linnaosa, Tallinn, Harju maakond, 13918, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 48255544
   },
   {
     "id": 38,
@@ -527,9 +675,13 @@
     "address": "Keskuse tn 18, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "Keskuse tn 18, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4007768,
+    "lon": 24.6780839,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Keskuse, Mustamäe, Mustamäe linnaosa, Tallinn, Harju maakond, 12911, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 9929157
   },
   {
     "id": 39,
@@ -541,9 +693,13 @@
     "address": "A. H. Tammsaare tee 145, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "A. H. Tammsaare tee 145, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4093065,
+    "lon": 24.6724858,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Mustamäe Humanitaargümnaasium, 145, A. H. Tammsaare tee, Kadaka, Mustamäe linnaosa, Tallinn, Harju maakond, 12915, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 255112151
   },
   {
     "id": 40,
@@ -555,9 +711,13 @@
     "address": "E. Vilde tee 64, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "E. Vilde tee 64, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4047582,
+    "lon": 24.6910778,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Mustamäe Reaalgümnaasium, 64, Eduard Vilde tee, Mustamäe, Mustamäe linnaosa, Tallinn, Harju maakond, 13421, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 12411457566
   },
   {
     "id": 41,
@@ -569,9 +729,13 @@
     "address": "Paldiski mnt 83, Haabersti linnaosa",
     "district": "Haabersti",
     "mapQuery": "Paldiski mnt 83, Haabersti linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4290435,
+    "lon": 24.6928212,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "83, Paldiski mnt, Mustjõe, Haabersti linnaosa, Tallinn, Harju maakond, 10614, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26855905
   },
   {
     "id": 42,
@@ -583,9 +747,13 @@
     "address": "Raudtee tn 73, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Raudtee tn 73, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3778824,
+    "lon": 24.6588799,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Raudtee, Kivimäe, Nõmme, Tallinn, Harju maakond, 10920, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 5120246
   },
   {
     "id": 43,
@@ -597,9 +765,13 @@
     "address": "Raudtee tn 68, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Raudtee tn 68, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3859707,
+    "lon": 24.6838563,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Raudtee, Nõmme, Tallinn, Harju maakond, 11618, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 48764753
   },
   {
     "id": 44,
@@ -611,9 +783,13 @@
     "address": "Õismäe tee 50, Haabersti linnaosa",
     "district": "Haabersti",
     "mapQuery": "Õismäe tee 50, Haabersti linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4134007,
+    "lon": 24.6460435,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Õismäe Gümnaasium, 50, Õismäe tee, Väike-Õismäe, Haabersti linnaosa, Tallinn, Harju maakond, 13512, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 254124705
   },
   {
     "id": 45,
@@ -625,9 +801,13 @@
     "address": "Õismäe tee 28, Haabersti linnaosa",
     "district": "Haabersti",
     "mapQuery": "Õismäe tee 28, Haabersti linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4135373,
+    "lon": 24.6488887,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Õismäe Vene Lütseum, 28, Õismäe tee, Väike-Õismäe, Haabersti linnaosa, Tallinn, Harju maakond, 13512, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 254124706
   },
   {
     "id": 46,
@@ -639,9 +819,13 @@
     "address": "Vikerkaare tn 10, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Vikerkaare tn 10, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3663844,
+    "lon": 24.6523307,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Vikerkaare, Pääsküla, Nõmme, Tallinn, Harju maakond, 10921, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 5181658
   },
   {
     "id": 47,
@@ -653,9 +837,13 @@
     "address": "Pae tn 5, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Pae tn 5, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4283162,
+    "lon": 24.802049,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Pae Gümnaasium, 5, Pae, Sikupilli, Lasnamäe linnaosa, Tallinn, Harju maakond, 11414, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 730319633
   },
   {
     "id": 48,
@@ -681,9 +869,13 @@
     "address": "Hariduse tn 3, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Hariduse tn 3, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4311153,
+    "lon": 24.7414361,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Prantsuse Lütseum, 3, Hariduse, Tõnismäe, Kesklinna linnaosa, Tallinn, Harju maakond, 10119, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 10633411726
   },
   {
     "id": 50,
@@ -695,9 +887,13 @@
     "address": "Vabaduse pst 50, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Vabaduse pst 50, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.383028,
+    "lon": 24.7029576,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Rahumäe Põhikool, 50, Vabaduse pst, Rahumäe, Nõmme, Tallinn, Harju maakond, 11622, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 296999451
   },
   {
     "id": 51,
@@ -709,9 +905,13 @@
     "address": "Kopli tn 98, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Kopli tn 98, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4569265,
+    "lon": 24.6777992,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Kopli, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "relation",
+    "osmId": 11131190
   },
   {
     "id": 52,
@@ -723,9 +923,13 @@
     "address": "Estonia pst 6, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Estonia pst 6, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4337876,
+    "lon": 24.7485012,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Reaalkool, 6, Estonia pst, Südalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 15095, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 770917467
   },
   {
     "id": 53,
@@ -737,9 +941,13 @@
     "address": "J. Sütiste tee 20, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "J. Sütiste tee 20, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3980633,
+    "lon": 24.6934167,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Saksa Gümnaasium, 20, Juhan Sütiste tee, Mustamäe, Mustamäe linnaosa, Tallinn, Harju maakond, 13411, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 255112168
   },
   {
     "id": 54,
@@ -751,9 +959,13 @@
     "address": "Liivalaia tn 23, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Liivalaia tn 23, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4303614,
+    "lon": 24.759267,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Liivalaia, Sibulaküla, Kesklinna linnaosa, Tallinn, Harju maakond, 15040, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 627014636
   },
   {
     "id": 55,
@@ -765,9 +977,13 @@
     "address": "Martsa tn 2, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Martsa tn 2, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4507422,
+    "lon": 24.8450533,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Täiskasvanute Gümnaasium, Narva mnt, Katleri, Lasnamäe linnaosa, Tallinn, Harju maakond, 13915, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 49953486
   },
   {
     "id": 56,
@@ -779,9 +995,13 @@
     "address": "Sõpruse pst 187, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "Sõpruse pst 187, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4015503,
+    "lon": 24.7015828,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "187, Sõpruse pst, Mustamäe, Mustamäe linnaosa, Tallinn, Harju maakond, 13415, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26920686
   },
   {
     "id": 57,
@@ -793,9 +1013,13 @@
     "address": "Tondi tn 40, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Tondi tn 40, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4107051,
+    "lon": 24.7333592,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tondi, Kitseküla, Tondi, Kristiine linnaosa, Tallinn, Harju maakond, 11317, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 27499369
   },
   {
     "id": 58,
@@ -807,9 +1031,13 @@
     "address": "Pärnu mnt 50, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Pärnu mnt 50, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4277881,
+    "lon": 24.7411841,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Tõnismäe Reaalkool, 50, Pärnu mnt, Tõnismäe, Kesklinna linnaosa, Tallinn, Harju maakond, 10119, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 807736635
   },
   {
     "id": 59,
@@ -821,9 +1049,13 @@
     "address": "Pärnu mnt 71, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Pärnu mnt 71, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4223387,
+    "lon": 24.74395,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "71, Pärnu mnt, Uus Maailm, Kesklinna linnaosa, Tallinn, Harju maakond, 10134, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 224022969
   },
   {
     "id": 60,
@@ -835,9 +1067,13 @@
     "address": "Kooli tn 2, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Kooli tn 2, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4401312,
+    "lon": 24.7430062,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Vanalinna Täiskasvanute Gümnaasium, Gümnaasiumi, All-linn, Vanalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 10133, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 10604599784
   },
   {
     "id": 61,
@@ -849,9 +1085,13 @@
     "address": "Vene tn 22, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Vene tn 22, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4375894,
+    "lon": 24.7473157,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Vene, All-linn, Vanalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 10123, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 162355646
   },
   {
     "id": 62,
@@ -863,9 +1103,13 @@
     "address": "Vabaõhukooli tee 7, Pirita linnaosa",
     "district": "Pirita",
     "mapQuery": "Vabaõhukooli tee 7, Pirita linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4634571,
+    "lon": 24.875677,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Konstantin Pätsi Vabaõhukool, 7, Vabaõhukooli tee, Kose, Pirita linnaosa, Tallinn, Harju maakond, 12014, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 1380019866
   },
   {
     "id": 63,
@@ -877,9 +1121,13 @@
     "address": "Akadeemia tee 25, Mustamäe linnaosa",
     "district": "Mustamäe",
     "mapQuery": "Akadeemia tee 25, Mustamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3997793,
+    "lon": 24.6586062,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Mustamäe Riigigümnaasium, 25, Akadeemia tee, Kadaka, Mustamäe linnaosa, Tallinn, Harju maakond, 12618, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 1004987563
   },
   {
     "id": 64,
@@ -891,9 +1139,13 @@
     "address": "Pärnu mnt 59, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Pärnu mnt 59, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4263506,
+    "lon": 24.7438148,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Muusika- ja Balletikool, 59, Pärnu mnt, Uus Maailm, Kesklinna linnaosa, Tallinn, Harju maakond, 10135, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "relation",
+    "osmId": 12547222
   },
   {
     "id": 65,
@@ -905,9 +1157,13 @@
     "address": "Kolde pst 67a, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Kolde pst 67a, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4389444,
+    "lon": 24.7036154,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Pelgulinna Riigigümnaasium, 67a, Kolde pst, Pelgulinn, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10321, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 1206402408
   },
   {
     "id": 66,
@@ -919,9 +1175,13 @@
     "address": "Endla tn 13, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Endla tn 13, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4283732,
+    "lon": 24.7282559,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Endla, Kassisaba, Kesklinna linnaosa, Tallinn, Harju maakond, 10136, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 603824551
   },
   {
     "id": 67,
@@ -933,9 +1193,13 @@
     "address": "Pallasti tn 41, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Pallasti tn 41, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4269054,
+    "lon": 24.7877706,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Pallasti, Sikupilli, Lasnamäe linnaosa, Tallinn, Harju maakond, 11412, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 77938206
   },
   {
     "id": 68,
@@ -947,9 +1211,13 @@
     "address": "Tondi tn 84, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Tondi tn 84, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4107051,
+    "lon": 24.7333592,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tondi, Kitseküla, Tondi, Kristiine linnaosa, Tallinn, Harju maakond, 11317, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 27499369
   },
   {
     "id": 69,
@@ -975,9 +1243,13 @@
     "address": "Juhkentali tn 18, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Juhkentali tn 18, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4255121,
+    "lon": 24.7705766,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Juhkentali, Kesklinna linnaosa, Tallinn, Harju maakond, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "relation",
+    "osmId": 11135049
   },
   {
     "id": 71,
@@ -1003,9 +1275,13 @@
     "address": "Majaka tn 26, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Majaka tn 26, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4275792,
+    "lon": 24.7936262,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Majaka, Sikupilli, Lasnamäe linnaosa, Tallinn, Harju maakond, 11411, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 630059327
   },
   {
     "id": 73,
@@ -1017,9 +1293,13 @@
     "address": "Sõle tn 14, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Sõle tn 14, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4477734,
+    "lon": 24.699312,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Sõle, Pelguranna, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10323, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 156068671
   },
   {
     "id": 74,
@@ -1031,9 +1311,13 @@
     "address": "A. Weizenbergi tn 20, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "A. Weizenbergi tn 20, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4385059,
+    "lon": 24.7848354,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "20a, August Weizenbergi, Kadriorg, Kesklinna linnaosa, Tallinn, Harju maakond, 10150, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26901036
   },
   {
     "id": 75,
@@ -1045,9 +1329,13 @@
     "address": "Sõle tn 40, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Sõle tn 40, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.448913,
+    "lon": 24.6981369,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Sõle, Pelguranna, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10314, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 858988074
   },
   {
     "id": 76,
@@ -1059,9 +1347,13 @@
     "address": "Toompuiestee 4-1, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Toompuiestee 4-1, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4384213,
+    "lon": 24.7346975,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Toompuiestee, Vanalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 15186, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 863797378
   },
   {
     "id": 77,
@@ -1073,9 +1365,13 @@
     "address": "Käo tn 53, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Käo tn 53, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4116611,
+    "lon": 24.7224635,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Käo, Tondi, Kristiine linnaosa, Tallinn, Harju maakond, 11311, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 34127284
   },
   {
     "id": 78,
@@ -1101,9 +1397,13 @@
     "address": "Mustamäe tee 5-503, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Mustamäe tee 5-503, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4157221,
+    "lon": 24.6919194,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Mustamäe tee, Lilleküla, Kristiine linnaosa, Tallinn, Harju maakond, 12916, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 487967866
   },
   {
     "id": 80,
@@ -1115,9 +1415,13 @@
     "address": "Idakaare tn 5, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Idakaare tn 5, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3883965,
+    "lon": 24.687084,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Nõmme Erakool, Vana-Pärnu mnt, Nõmme, Tallinn, Harju maakond, 11614, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 296999456
   },
   {
     "id": 81,
@@ -1129,9 +1433,13 @@
     "address": "Kivimäe tn 25, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Kivimäe tn 25, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.3770852,
+    "lon": 24.6566655,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Kivimäe, Raudtee, Kivimäe, Nõmme, Tallinn, Harju maakond, 10920, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 29163110
   },
   {
     "id": 82,
@@ -1143,9 +1451,13 @@
     "address": "Vene tn 31, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Vene tn 31, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4375894,
+    "lon": 24.7473157,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Vene, All-linn, Vanalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 10123, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 162355646
   },
   {
     "id": 83,
@@ -1157,9 +1469,13 @@
     "address": "Vabaõhumuuseumi tee 8, Haabersti linnaosa",
     "district": "Haabersti",
     "mapQuery": "Vabaõhumuuseumi tee 8, Haabersti linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4315356,
+    "lon": 24.6501137,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "8, Vabaõhumuuseumi tee, Haabersti, Haabersti linnaosa, Tallinn, Harju maakond, 13521, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26919912
   },
   {
     "id": 84,
@@ -1171,9 +1487,13 @@
     "address": "Sakala tn 21, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Sakala tn 21, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4327237,
+    "lon": 24.7498688,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Sakala, Südalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 15030, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 132932529
   },
   {
     "id": 85,
@@ -1185,9 +1505,13 @@
     "address": "Tondi tn 55, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Tondi tn 55, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4107051,
+    "lon": 24.7333592,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tondi, Kitseküla, Tondi, Kristiine linnaosa, Tallinn, Harju maakond, 11317, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 27499369
   },
   {
     "id": 86,
@@ -1199,9 +1523,13 @@
     "address": "Tehnika tn 18, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Tehnika tn 18, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4357169,
+    "lon": 24.7266783,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tehnika, Kelmiküla, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10137, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 40388973
   },
   {
     "id": 87,
@@ -1213,9 +1541,13 @@
     "address": "Pärnu mnt 11, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Pärnu mnt 11, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4339935,
+    "lon": 24.7470036,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "11, Pärnu mnt, Vanalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 10148, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 201040632
   },
   {
     "id": 88,
@@ -1227,9 +1559,13 @@
     "address": "Valukoja tn 9, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Valukoja tn 9, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4207158,
+    "lon": 24.8092374,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tallinna Rahvusvaheline Kool ja Ülemiste kogukonnahoone, Ülemiste, Lasnamäe linnaosa, Tallinn, Harju maakond, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 1206692993
   },
   {
     "id": 89,
@@ -1241,9 +1577,13 @@
     "address": "Pirita tee 12, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Pirita tee 12, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4454095,
+    "lon": 24.7997474,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "12, Pirita tee, Kadriorg, Kesklinna linnaosa, Tallinn, Harju maakond, 12011, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 26903587
   },
   {
     "id": 90,
@@ -1269,9 +1609,13 @@
     "address": "Tuulemaa tn 12, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Tuulemaa tn 12, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4516487,
+    "lon": 24.6900061,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tuulemaa, Pelguranna, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10312, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "way",
+    "osmId": 826185042
   },
   {
     "id": 92,
@@ -1283,8 +1627,12 @@
     "address": "Tondi tn 55, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Tondi tn 55, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.4107051,
+    "lon": 24.7333592,
+    "sourceFile": "Koolid.xlsx",
+    "geocodedAddress": "Tondi, Kitseküla, Tondi, Kristiine linnaosa, Tallinn, Harju maakond, 11317, Eesti",
+    "geocoder": "OpenStreetMap Nominatim",
+    "osmType": "node",
+    "osmId": 27499369
   }
 ]

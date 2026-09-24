@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-09-24T07:06:49.905Z",
+  "total": 92,
+  "existing": 0,
+  "matched": 87,
+  "unmatched": [
+    {
+      "id": 48,
+      "name": "Tallinna Põhjatähe Põhikool",
+      "query": "Martsa tn 2, Lasnamäe linnaosa, Tallinn, Eesti"
+    },
+    {
+      "id": 69,
+      "name": "EBS Gümnaasium",
+      "query": "A. Lauteri tn 3, Kesklinna linnaosa, Tallinn, Eesti"
+    },
+    {
+      "id": 71,
+      "name": "Emili Kool",
+      "query": "Keevise tn 2, Lasnamäe linnaosa, Tallinn, Eesti"
+    },
+    {
+      "id": 78,
+      "name": "Loova tuleviku kool",
+      "query": "Rüütli tn 6, Kesklinna linnaosa, Tallinn, Eesti"
+    },
+    {
+      "id": 90,
+      "name": "Tallinna Toomkool",
+      "query": "Apteegi tn 3, Kesklinna linnaosa, Tallinn, Eesti"
+    }
+  ],
+  "errors": [],
+  "located": 87,
+  "missing": 5
+}
