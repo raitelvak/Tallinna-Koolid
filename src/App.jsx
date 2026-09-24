@@ -44,6 +44,9 @@ function SchoolMap({ origin, items, selected, preview, onSelect, onMapClick }) {
   const mapRef = useRef(null);
   const groupRef = useRef(null);
   const previewRef = useRef(null);
+  const clickHandlerRef = useRef(onMapClick);
+
+  useEffect(() => { clickHandlerRef.current = onMapClick; }, [onMapClick]);
 
   useEffect(() => {
     const map = L.map(elementRef.current).setView([59.437, 24.7536], 11);
@@ -53,10 +56,10 @@ function SchoolMap({ origin, items, selected, preview, onSelect, onMapClick }) {
     }).addTo(map);
     groupRef.current = L.layerGroup().addTo(map);
     mapRef.current = map;
-    map.on("click", event => onMapClick?.(event.latlng));
+    map.on("click", event => clickHandlerRef.current?.(event.latlng));
     setTimeout(() => map.invalidateSize(), 100);
     return () => map.remove();
-  }, [onMapClick]);
+  }, []);
 
   useEffect(() => {
     if (!groupRef.current || !mapRef.current) return;
@@ -99,75 +102,73 @@ function SchoolMap({ origin, items, selected, preview, onSelect, onMapClick }) {
     }
     if (!preview || !Number.isFinite(preview.lat) || !Number.isFinite(preview.lon)) return;
     previewRef.current = L.circleMarker([preview.lat, preview.lon], {
-      radius: 12, color: "#fff", weight: 3, fillColor: "#e11d48", fillOpacity: 1
-    }).bindPopup("Eelvaade: uus asukoht").addTo(mapRef.current).openPopup();
+      radius: 13,
+      color: "#fff",
+      weight: 3,
+      fillColor: "#e11d48",
+      fillOpacity: 1
+    }).bindPopup("Uus asukoht").addTo(mapRef.current).openPopup();
     mapRef.current.setView([preview.lat, preview.lon], 18);
   }, [preview]);
 
   return <div ref={elementRef} className="map" />;
 }
 
-function CoordinateEditor({ school, onClose, onSave, onPreview }) {
-  const [lat, setLat] = useState(String(school.lat ?? ""));
-  const [lon, setLon] = useState(String(school.lon ?? ""));
-  const [error, setError] = useState("");
-
-  useEffect(() => {
-    setLat(String(school.lat ?? ""));
-    setLon(String(school.lon ?? ""));
-    setError("");
-  }, [school]);
-
-  function validate() {
-    const latitude = Number(lat.replace(",", "."));
-    const longitude = Number(lon.replace(",", "."));
-    if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) {
-      setError("Laius- ja pikkuskraad peavad olema numbrid.");
-      return null;
-    }
-    if (!isInTallinn(latitude, longitude)) {
-      setError("Koordinaadid ei jää Tallinna piirkonda.");
-      return null;
-    }
-    setError("");
-    return { lat: latitude, lon: longitude };
-  }
-
+function CoordinateEditorPanel({ school, draft, error, onChange, onClose, onPreview, onSave }) {
   return (
-    <div className="editor-overlay" role="dialog" aria-modal="true" aria-label="Koordinaatide muutmine">
-      <div className="editor-dialog">
-        <div className="editor-title-row">
-          <div>
-            <small>KOORDINAATIDE MUUTMINE</small>
-            <h3>{school.name}</h3>
-          </div>
-          <button className="icon-button" onClick={onClose} aria-label="Sulge">×</button>
+    <aside className="coordinate-panel" aria-label="Koordinaatide muutmine">
+      <div className="coordinate-panel-header">
+        <div>
+          <small>KOORDINAATIDE MUUTMINE</small>
+          <h3>{school.name}</h3>
         </div>
-        <p className="editor-address">{school.address}</p>
+        <button className="icon-button" onClick={onClose} aria-label="Sulge">×</button>
+      </div>
+
+      <div className="coordinate-panel-body">
+        <div className="coordinate-info">
+          <span>Aadress</span>
+          <strong>{school.address}</strong>
+        </div>
+        <div className="coordinate-info">
+          <span>Omandivorm</span>
+          <strong>{school.ownership}</strong>
+        </div>
+
         <div className="coordinate-fields">
           <label>
             Laiuskraad (lat)
-            <input value={lat} onChange={event => setLat(event.target.value)} inputMode="decimal" />
+            <input
+              value={draft.lat}
+              onChange={event => onChange({ ...draft, lat: event.target.value })}
+              inputMode="decimal"
+            />
           </label>
           <label>
             Pikkuskraad (lon)
-            <input value={lon} onChange={event => setLon(event.target.value)} inputMode="decimal" />
+            <input
+              value={draft.lon}
+              onChange={event => onChange({ ...draft, lon: event.target.value })}
+              inputMode="decimal"
+            />
           </label>
         </div>
-        <p className="editor-help">Võid sisestada väärtused või klõpsata kaardil soovitud koolihoone asukohal.</p>
-        {error && <div className="error">{error}</div>}
-        <div className="editor-actions">
-          <button className="secondary" onClick={() => {
-            const point = validate();
-            if (point) onPreview(point);
-          }}>Vaata kaardil</button>
-          <button className="primary" onClick={() => {
-            const point = validate();
-            if (point) onSave(point);
-          }}>Salvesta muudatus</button>
+
+        <div className="map-click-hint">
+          <strong>Lihtsaim viis:</strong>
+          <span>klõpsa kaardil koolihoone õigel kohal. Koordinaadid täituvad automaatselt.</span>
         </div>
+
+        {error && <div className="error">{error}</div>}
+
+        <div className="coordinate-panel-actions">
+          <button className="secondary" onClick={onPreview}>Näita kaardil</button>
+          <button className="primary" onClick={onSave}>Salvesta muudatus</button>
+        </div>
+
+        <button className="back-to-list" onClick={onClose}>← Tagasi koolide nimekirja</button>
       </div>
-    </div>
+    </aside>
   );
 }
 
@@ -186,8 +187,9 @@ export default function App() {
   const [level, setLevel] = useState("Kõik kooliastmed");
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState(null);
-  const [editorOpen, setEditorOpen] = useState(false);
   const [editingSchool, setEditingSchool] = useState(null);
+  const [editingDraft, setEditingDraft] = useState({ lat: "", lon: "" });
+  const [editorError, setEditorError] = useState("");
   const [preview, setPreview] = useState(null);
   const [notice, setNotice] = useState("");
   const timer = useRef();
@@ -204,7 +206,6 @@ export default function App() {
       `${school.name} ${school.address}`.toLowerCase().includes(query.toLowerCase())
     );
   }, [mode, nearest, schools, ownership, district, level, query]);
-
   const mapItems = useMemo(() => filtered.filter(hasCoordinates), [filtered]);
 
   function typeAddress(value) {
@@ -279,35 +280,62 @@ export default function App() {
 
   function openEditor(school) {
     setEditingSchool(school);
+    setEditingDraft({ lat: String(school.lat ?? ""), lon: String(school.lon ?? "") });
     setSelected(school.id);
     setPreview(hasCoordinates(school) ? { lat: school.lat, lon: school.lon } : null);
-    setEditorOpen(true);
+    setEditorError("");
     setNotice("");
   }
 
-  function saveCoordinates(point) {
-    setSchools(current => {
-      const updated = current.map(school => school.id === editingSchool.id ? {
-        ...school,
-        ...point,
-        coordinateSource: "Manually verified in map editor"
-      } : school);
-      const edits = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-      edits[editingSchool.id] = { ...point, coordinateSource: "Manually verified in map editor" };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(edits));
-      return updated;
-    });
+  function closeEditor() {
+    setEditingSchool(null);
+    setEditingDraft({ lat: "", lon: "" });
+    setEditorError("");
+    setPreview(null);
+  }
+
+  function validatedDraft() {
+    const lat = Number(String(editingDraft.lat).replace(",", "."));
+    const lon = Number(String(editingDraft.lon).replace(",", "."));
+    if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+      setEditorError("Laius- ja pikkuskraad peavad olema numbrid.");
+      return null;
+    }
+    if (!isInTallinn(lat, lon)) {
+      setEditorError("Koordinaadid ei jää Tallinna piirkonda.");
+      return null;
+    }
+    setEditorError("");
+    return { lat, lon };
+  }
+
+  function previewCoordinates() {
+    const point = validatedDraft();
+    if (point) setPreview(point);
+  }
+
+  function saveCoordinates() {
+    const point = validatedDraft();
+    if (!point || !editingSchool) return;
+    setSchools(current => current.map(school => school.id === editingSchool.id ? {
+      ...school,
+      ...point,
+      coordinateSource: "Manually verified in map editor"
+    } : school));
+    const edits = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    edits[editingSchool.id] = { ...point, coordinateSource: "Manually verified in map editor" };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(edits));
     setPreview(point);
-    setEditingSchool(current => ({ ...current, ...point }));
     setNotice(`${editingSchool.name}: koordinaadid salvestatud selles brauseris.`);
-    setEditorOpen(false);
+    closeEditor();
   }
 
   function handleMapClick(latlng) {
-    if (!editorOpen || !editingSchool) return;
+    if (!editingSchool) return;
     const point = { lat: Number(latlng.lat.toFixed(7)), lon: Number(latlng.lng.toFixed(7)) };
+    setEditingDraft({ lat: String(point.lat), lon: String(point.lon) });
     setPreview(point);
-    setEditingSchool(current => ({ ...current, ...point }));
+    setEditorError("");
   }
 
   function downloadSchoolsJson() {
@@ -323,7 +351,7 @@ export default function App() {
   function resetLocalEdits() {
     localStorage.removeItem(STORAGE_KEY);
     setSchools(schoolsData);
-    setPreview(null);
+    closeEditor();
     setNotice("Kohalikud koordinaadiparandused eemaldatud.");
   }
 
@@ -383,24 +411,36 @@ export default function App() {
             <div className="tabs"><button className={`tab ${mode === "nearest" ? "active" : ""}`} disabled={!nearest.length} onClick={() => setMode("nearest")}>3 lähimat</button><button className={`tab ${mode === "all" ? "active" : ""}`} onClick={() => setMode("all")}>Kõik koolid</button></div>
             <div className="filters"><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Kooli nimi või aadress" /><select value={ownership} onChange={event => setOwnership(event.target.value)}><option>Kõik omandivormid</option><option>Munitsipaalkool</option><option>Riigikool</option><option>Erakool</option></select><select value={district} onChange={event => setDistrict(event.target.value)}>{districts.map(item => <option key={item}>{item}</option>)}</select><select value={level} onChange={event => setLevel(event.target.value)}>{levels.map(item => <option key={item}>{item}</option>)}</select></div>
           </div>
-          <div className="map-grid">
+
+          <div className={`map-grid ${editingSchool ? "editing" : ""}`}>
             <SchoolMap origin={origin} items={mapItems} selected={selected} preview={preview} onSelect={setSelected} onMapClick={handleMapClick} />
-            <aside className="school-list">
-              <div className="list-head">Koolide nimekiri ({filtered.length})</div>
-              {filtered.map((school, index) =>
-                <div className={`school-item ${selected === school.id ? "active" : ""}`} key={school.id} onClick={() => setSelected(school.id)}>
-                  <div className="school-item-main"><strong><i className="dot" style={{ background: markerColor(school.ownership) }} />{index + 1}. {school.name}</strong><span>{school.ownership} · {school.address} · {school.district}</span><code>{hasCoordinates(school) ? `${school.lat}, ${school.lon}` : "Koordinaadid puuduvad"}</code></div>
-                  <button className="edit-button" onClick={event => { event.stopPropagation(); openEditor(school); }}>Muuda</button>
-                </div>
-              )}
-            </aside>
+
+            {editingSchool ? (
+              <CoordinateEditorPanel
+                school={editingSchool}
+                draft={editingDraft}
+                error={editorError}
+                onChange={setEditingDraft}
+                onClose={closeEditor}
+                onPreview={previewCoordinates}
+                onSave={saveCoordinates}
+              />
+            ) : (
+              <aside className="school-list">
+                <div className="list-head">Koolide nimekiri ({filtered.length})</div>
+                {filtered.map((school, index) =>
+                  <div className={`school-item ${selected === school.id ? "active" : ""}`} key={school.id} onClick={() => setSelected(school.id)}>
+                    <div className="school-item-main"><strong><i className="dot" style={{ background: markerColor(school.ownership) }} />{index + 1}. {school.name}</strong><span>{school.ownership} · {school.address} · {school.district}</span><code>{hasCoordinates(school) ? `${school.lat}, ${school.lon}` : "Koordinaadid puuduvad"}</code></div>
+                    <button className="edit-button" onClick={event => { event.stopPropagation(); openEditor(school); }}>Muuda</button>
+                  </div>
+                )}
+              </aside>
+            )}
           </div>
         </div>
 
         <footer className="footer">Andmeallikas: Tallinna Haridusameti teatmik. Kaart: OpenStreetMap.</footer>
       </main>
-
-      {editorOpen && editingSchool && <CoordinateEditor school={editingSchool} onClose={() => { setEditorOpen(false); setPreview(null); }} onPreview={point => setPreview(point)} onSave={saveCoordinates} />}
     </>
   );
 }
