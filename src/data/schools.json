@@ -27,13 +27,10 @@
     "address": "Suur-Kloostri tn 16, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Suur-Kloostri tn 16, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": 59.4392935,
-    "lon": 24.7413408,
+    "lat": 59.439912,
+    "lon": 24.743174,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Suur-Kloostri, All-linn, Vanalinn, Kesklinna linnaosa, Tallinn, Harju maakond, 15161, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "way",
-    "osmId": 4579288
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 3,
@@ -45,13 +42,10 @@
     "address": "Raudtee tn 55, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Raudtee tn 55, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": 59.3768169,
-    "lon": 24.6554956,
+    "lat": 59.3830556,
+    "lon": 24.6738889,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Raudtee, Kivimäe, Nõmme, Tallinn, Harju maakond, 10919, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "way",
-    "osmId": 5058502
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 4,
@@ -153,13 +147,10 @@
     "address": "Ümera tn 46, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Ümera tn 46, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": 59.4439398,
-    "lon": 24.8869685,
+    "lat": 59.4434624,
+    "lon": 24.8971882,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Ümera, Seli, Lasnamäe linnaosa, Tallinn, Harju maakond, 13817, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "way",
-    "osmId": 48125561
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 10,
@@ -189,13 +180,10 @@
     "address": "Mulla tn 7, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Mulla tn 7, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": 59.4389444,
-    "lon": 24.7036154,
+    "lat": 59.434496,
+    "lon": 24.714935,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Tallinna Pelgulinna Riigigümnaasium, 67a, Kolde pst, Pelgulinn, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10321, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "way",
-    "osmId": 1206402408
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 12,
@@ -207,13 +195,10 @@
     "address": "Metsavahi tee 19, Pirita linnaosa",
     "district": "Pirita",
     "mapQuery": "Metsavahi tee 19, Pirita linnaosa, Tallinn, Eesti",
-    "lat": 59.4699512,
-    "lon": 24.8414265,
+    "lat": 59.4704561,
+    "lon": 24.8415775,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Pirita raamatukogu, 19, Metsavahi tee, Pirita, Pirita linnaosa, Tallinn, Harju maakond, 11913, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "node",
-    "osmId": 7603479576
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 13,
@@ -1013,13 +998,10 @@
     "address": "Tondi tn 40, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Tondi tn 40, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": 59.4107051,
-    "lon": 24.7333592,
+    "lat": 59.4101006,
+    "lon": 24.728955,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Tondi, Kitseküla, Tondi, Kristiine linnaosa, Tallinn, Harju maakond, 11317, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "node",
-    "osmId": 27499369
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 58,
@@ -1211,13 +1193,10 @@
     "address": "Tondi tn 84, Kristiine linnaosa",
     "district": "Kristiine",
     "mapQuery": "Tondi tn 84, Kristiine linnaosa, Tallinn, Eesti",
-    "lat": 59.4107051,
-    "lon": 24.7333592,
+    "lat": 59.4048653,
+    "lon": 24.71447,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Tondi, Kitseküla, Tondi, Kristiine linnaosa, Tallinn, Harju maakond, 11317, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "node",
-    "osmId": 27499369
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 69,
@@ -1229,9 +1208,10 @@
     "address": "A. Lauteri tn 3, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "A. Lauteri tn 3, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": 59.4329,
-    "lon": 24.7562,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.43203,
+    "lon": 24.75663,
+    "sourceFile": "Koolid.xlsx",
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 70,
@@ -1383,9 +1363,10 @@
     "address": "Rüütli tn 6, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Rüütli tn 6, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": 59.4376,
-    "lon": 24.7453,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.43586,
+    "lon": 24.7418671,
+    "sourceFile": "Koolid.xlsx",
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 79,
@@ -1433,13 +1414,10 @@
     "address": "Kivimäe tn 25, Nõmme linnaosa",
     "district": "Nõmme",
     "mapQuery": "Kivimäe tn 25, Nõmme linnaosa, Tallinn, Eesti",
-    "lat": 59.3770852,
-    "lon": 24.6566655,
+    "lat": 59.38122,
+    "lon": 24.6464,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Kivimäe, Raudtee, Kivimäe, Nõmme, Tallinn, Harju maakond, 10920, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "node",
-    "osmId": 29163110
+    "coordinateSource": "Manually verified from public map/address sources"
   },
   {
     "id": 82,
@@ -1596,7 +1574,7 @@
     "district": "Kesklinn",
     "mapQuery": "Apteegi tn 3, Kesklinna linnaosa, Tallinn, Eesti",
     "lat": 59.4384,
-    "lon": 24.7450,
+    "lon": 24.745,
     "sourceFile": "Koolid.xlsx"
   },
   {
