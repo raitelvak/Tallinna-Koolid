@@ -129,13 +129,10 @@
     "address": "Pae tn 82, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Pae tn 82, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": 59.4336744,
-    "lon": 24.8185241,
+    "lat": 59.43761,
+    "lon": 24.822734,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Pae, Lasnamäe linnaosa, Tallinn, Harju maakond, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "relation",
-    "osmId": 11132309
+    "coordinateSource": "Manually verified in OpenStreetMap"
   },
   {
     "id": 9,
@@ -642,13 +639,10 @@
     "address": "Mahtra tn 60, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Mahtra tn 60, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": 59.4395024,
-    "lon": 24.8761975,
+    "lat": 59.43946,
+    "lon": 24.881507,
     "sourceFile": "Koolid.xlsx",
-    "geocodedAddress": "Mahtra, Mustakivi, Lasnamäe linnaosa, Tallinn, Harju maakond, 13918, Eesti",
-    "geocoder": "OpenStreetMap Nominatim",
-    "osmType": "way",
-    "osmId": 48255544
+    "coordinateSource": "Manually verified in OpenStreetMap"
   },
   {
     "id": 38,
@@ -1241,9 +1235,10 @@
     "address": "Keevise tn 2, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Keevise tn 2, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": 59.4219,
-    "lon": 24.8075,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.422433,
+    "lon": 24.79846,
+    "sourceFile": "Koolid.xlsx",
+    "coordinateSource": "Manually verified in OpenStreetMap"
   },
   {
     "id": 72,
@@ -1573,9 +1568,10 @@
     "address": "Apteegi tn 3, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Apteegi tn 3, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": 59.4384,
-    "lon": 24.745,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.43783,
+    "lon": 24.746355,
+    "sourceFile": "Koolid.xlsx",
+    "coordinateSource": "Manually verified in OpenStreetMap"
   },
   {
     "id": 91,
