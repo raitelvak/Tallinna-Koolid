@@ -1,0 +1,47 @@
+name: Geocode 92 Tallinn schools
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: geocode-schools
+  cancel-in-progress: false
+
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Geocode school addresses
+        run: node scripts/geocode-schools.mjs
+
+      - name: Upload geocoding report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geocode-report
+          path: src/data/geocode-report.json
+          if-no-files-found: ignore
+
+      - name: Commit coordinates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/schools.json src/data/geocode-report.json
+          if git diff --cached --quiet; then
+            echo "Koordinaadid ei muutunud."
+          else
+            git commit -m "Add coordinates for Tallinn schools"
+            git push
+          fi
