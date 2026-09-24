@@ -855,8 +855,8 @@
     "address": "Martsa tn 2, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Martsa tn 2, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
+    "lat": 59.4327,
+    "lon": 24.8344,
     "sourceFile": "Koolid.xlsx"
   },
   {
@@ -1229,8 +1229,8 @@
     "address": "A. Lauteri tn 3, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "A. Lauteri tn 3, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
+    "lat": 59.4329,
+    "lon": 24.7562,
     "sourceFile": "Koolid.xlsx"
   },
   {
@@ -1261,8 +1261,8 @@
     "address": "Keevise tn 2, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Keevise tn 2, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
+    "lat": 59.4219,
+    "lon": 24.8075,
     "sourceFile": "Koolid.xlsx"
   },
   {
@@ -1383,8 +1383,8 @@
     "address": "Rüütli tn 6, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Rüütli tn 6, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
+    "lat": 59.4376,
+    "lon": 24.7453,
     "sourceFile": "Koolid.xlsx"
   },
   {
@@ -1595,8 +1595,8 @@
     "address": "Apteegi tn 3, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Apteegi tn 3, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": null,
-    "lon": null,
+    "lat": 59.4384,
+    "lon": 24.7450,
     "sourceFile": "Koolid.xlsx"
   },
   {
