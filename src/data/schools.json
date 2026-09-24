@@ -207,13 +207,14 @@
     "address": "Ristiku tn 69, Põhja-Tallinna linnaosa",
     "district": "Põhja-Tallinn",
     "mapQuery": "Ristiku tn 69, Põhja-Tallinna linnaosa, Tallinn, Eesti",
-    "lat": 59.4438888,
-    "lon": 24.7119602,
+    "lat": 59.4425347,
+    "lon": 24.7106719,
     "sourceFile": "Koolid.xlsx",
     "geocodedAddress": "Ristiku, Pelgulinn, Põhja-Tallinna linnaosa, Tallinn, Harju maakond, 10317, Eesti",
     "geocoder": "OpenStreetMap Nominatim",
     "osmType": "way",
-    "osmId": 156068675
+    "osmId": 156068675,
+    "coordinateSource": "Manually verified in map editor"
   },
   {
     "id": 14,
@@ -369,13 +370,14 @@
     "address": "Koidu tn 97, Kesklinna linnaosa",
     "district": "Kesklinn",
     "mapQuery": "Koidu tn 97, Kesklinna linnaosa, Tallinn, Eesti",
-    "lat": 59.4223664,
-    "lon": 24.7367562,
+    "lat": 59.4223383,
+    "lon": 24.7382186,
     "sourceFile": "Koolid.xlsx",
     "geocodedAddress": "Koidu, Uus Maailm, Kesklinna linnaosa, Tallinn, Harju maakond, 10139, Eesti",
     "geocoder": "OpenStreetMap Nominatim",
     "osmType": "way",
-    "osmId": 982036739
+    "osmId": 982036739,
+    "coordinateSource": "Manually verified in map editor"
   },
   {
     "id": 23,
@@ -549,13 +551,14 @@
     "address": "Vikerlase tn 16, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Vikerlase tn 16, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": 59.4381366,
-    "lon": 24.838846,
+    "lat": 59.4376843,
+    "lon": 24.8398853,
     "sourceFile": "Koolid.xlsx",
     "geocodedAddress": "Vikerlase, Laagna, Lasnamäe linnaosa, Tallinn, Harju maakond, 13615, Eesti",
     "geocoder": "OpenStreetMap Nominatim",
     "osmType": "way",
-    "osmId": 4871848
+    "osmId": 4871848,
+    "coordinateSource": "Manually verified in map editor"
   },
   {
     "id": 33,
@@ -567,13 +570,14 @@
     "address": "P. Pinna tn 15, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "P. Pinna tn 15, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": 59.4355987,
-    "lon": 24.8366836,
+    "lat": 59.4377534,
+    "lon": 24.8398426,
     "sourceFile": "Koolid.xlsx",
     "geocodedAddress": "P. Pinna, Paul Pinna, Laagna, Lasnamäe linnaosa, Tallinn, Harju maakond, 13619, Eesti",
     "geocoder": "OpenStreetMap Nominatim",
     "osmType": "node",
-    "osmId": 12542143932
+    "osmId": 12542143932,
+    "coordinateSource": "Manually verified in map editor"
   },
   {
     "id": 34,
@@ -834,9 +838,10 @@
     "address": "Martsa tn 2, Lasnamäe linnaosa",
     "district": "Lasnamäe",
     "mapQuery": "Martsa tn 2, Lasnamäe linnaosa, Tallinn, Eesti",
-    "lat": 59.4327,
-    "lon": 24.8344,
-    "sourceFile": "Koolid.xlsx"
+    "lat": 59.450939,
+    "lon": 24.845141,
+    "sourceFile": "Koolid.xlsx",
+    "coordinateSource": "Manually verified in map editor"
   },
   {
     "id": 49,
