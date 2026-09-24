@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "geocode": "node scripts/geocode-schools.mjs"
     "dev": "vite",
     "build": "vite build",
     "update:schools": "node scripts/scrape-all-schools.mjs"
